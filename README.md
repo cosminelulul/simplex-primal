@@ -2,6 +2,8 @@
 
 A pure-Python implementation of the **Primal Simplex Method** for Linear Programming.
 
+Available on PyPi: [simplex-primal 1.0](https://pypi.org/project/simplex-primal/)
+
 ---
 
 ## Features:
@@ -47,6 +49,9 @@ pip install simplex-primal
 
 pip install git+https://github.com/cosminelulul/simplex-primal.git
 ```
+--- 
+## License
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
