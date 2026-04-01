@@ -1,0 +1,40 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "simplex-primal"
+version         = "1.0.0"
+description     = "Primal Simplex Method solver with exact rational arithmetic (Big-M)"
+readme          = "README.md"
+license         = { text = "MIT" }
+requires-python = ">=3.9"
+keywords        = ["linear-programming", "simplex", "operations-research", "optimization"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+# No third-party dependencies — stdlib only.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage   = "https://github.com/cosminelulul/simplex-primal"
+Repository = "https://github.com/cosminelulul/simplex-primal"
+Issues     = "https://github.com/cosminelulul/simplex-primal/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["simplex_primal*"]
