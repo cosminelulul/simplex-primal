@@ -43,6 +43,7 @@ print(result["sol_text"])      # formatted solution + verification
 
 ## Installation
 ```bash
+pip install simplex-primal
 
 pip install git+https://github.com/cosminelulul/simplex-primal.git
 ```
