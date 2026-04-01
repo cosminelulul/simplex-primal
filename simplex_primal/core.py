@@ -269,7 +269,7 @@ def format_solution(
             for k in range(m)
         )
         result = format_fraction_plain(S_XB[i])
-        mark   = "✅" if S_XB[i] == b_f[i] else "❌"
+        mark   = "✔" if S_XB[i] == b_f[i] else "✘"
         detail_rows.append(f"  {parts} = {result}  {mark}")
 
     for i in range(m):
@@ -289,7 +289,7 @@ def format_solution(
 
     all_ok = all(S_XB[i] == b_f[i] for i in range(m))
     lines.append("")
-    lines.append(f"  Verification result: {'✅ CORRECT' if all_ok else '❌ ERROR'}")
+    lines.append(f"  Verification result: {'✔ CORRECT' if all_ok else '✘ ERROR'}")
     lines.append("=" * 55)
 
     return "\n".join(lines)
